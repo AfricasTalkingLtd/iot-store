@@ -1,0 +1,29 @@
+{
+  "name": "iot-store",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=iot-store:* node ./bin/www",
+    "dev": "DEBUG=iot-store:* nodemon ./bin/www",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "africastalking": "^0.2.0",
+    "body-parser": "~1.18.2",
+    "config": "^1.28.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-security": "^1.4.0",
+    "nodemon": "^1.12.4"
+  }
+}

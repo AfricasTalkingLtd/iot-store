@@ -1,0 +1,11 @@
+{
+    "africastalking": {
+        "apiKey": null,
+        "username": null,
+        "senderId": null,
+        "ussd": null,
+        "payments": {
+            "product": null
+        }
+    }
+}
