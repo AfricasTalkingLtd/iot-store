@@ -95,7 +95,7 @@ router.post('/ipn', async (req, res) => {
     const order = orders[data.requestMetadata.transaction];
     if (order) {
         const paymentValue = parseFloat(data.value.replace(/^[a-zA-Z]{3} /, ''));
-        if (paymentValue < parseFloat(order.amount)) {
+        if (paymentValue < parseFloat(order.amount) || data.status !== 'Success') {
             orders[data.requestMetadata.transaction].status = 'Not Fully Paid! Contact support +254718769882';
         } else {
             orders[data.requestMetadata.transaction].status = `${statuses[Math.floor(Math.random() * statuses.length)]}`;
